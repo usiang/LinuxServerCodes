@@ -7,6 +7,10 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <string.h>
+// 判断是macOS
+#ifdef __APPLE__
+#include <libgen.h>
+#endif
 
 #define BUF_SIZE 1024
 
