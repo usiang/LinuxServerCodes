@@ -7,6 +7,11 @@
 #include <string.h>
 #include <stdlib.h>
 
+// 判断是macOS
+#ifdef __APPLE__
+#include <libgen.h>
+#endif
+
 int main( int argc, char* argv[] )
 {
     if( argc <= 2 )
